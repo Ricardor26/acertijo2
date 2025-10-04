@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f4c3; /* pastel neutro */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px;
+      background-color: #b3e5fc;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #333;
+    }
+
+    header h2 {
+      margin: 5px 0 0 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+      width: 90%;
+      max-width: 1000px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background-color: #ffe0b2;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      flex: 1 1 300px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .box audio, .box img, .box video {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    /* --- Responsivo para móvil --- */
+    @media (max-width: 768px) {
+      header h1 { font-size: 24px; }
+      header h2 { font-size: 14px; }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Amor lo lograste!!!</h1>
+  <h2 id="message">Claro que lo harías</h2>
+</header>
+
+<div class="container">
+  
+  <div class="box">
+    <h3>Video</h3>
+    <video controls>
+      <source src="videoacertijo.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+  </div>
+</div>
+
+<div>
+    <p>--</p>
+</div>
+
+<div>
+    <h1>LO SÉ: "PENDEJO"</h1>
+    <p>Con mucho amor y también con mucho cringe jajajaja</p>
+</div>
+
+</body>
+</html>
